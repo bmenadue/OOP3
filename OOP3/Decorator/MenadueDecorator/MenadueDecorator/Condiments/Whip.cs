@@ -10,8 +10,19 @@ namespace MenadueDecorator
     {
         public Beverage beverage;
 
-        public void cost() { }
+        public Whip(Beverage beverage)
+        {
+            this.beverage = beverage;
+        }
 
-        public string Description { get; set; }
+        public override double cost()
+        {
+            return .10 + beverage.cost();
+        }
+
+        public override string getDescription()
+        {
+            return beverage.getDescription() + ", Whip";
+        }
     }
 }

@@ -8,10 +8,6 @@ namespace MenadueDecorator
 {
     public abstract class CondimentDecorator : Beverage
     {
-        public override string Description { get; set; }
-
-        public override double Cost()
-        {
-        }
+        public abstract string getDescription();
     }
 }

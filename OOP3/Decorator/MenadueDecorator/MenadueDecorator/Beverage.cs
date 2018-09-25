@@ -8,9 +8,14 @@ namespace MenadueDecorator
 {
     public abstract class Beverage
     {
-        public abstract string Description { get; set; }
+        public string description;
 
-        public abstract double Cost();
+        public string getDescription()
+        {
+            return description;
+        }
+
+        public abstract double cost();
 
     }
 }

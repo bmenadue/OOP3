@@ -10,12 +10,10 @@ namespace MenadueDecorator
     {
         public Espresso()
         {
-            Description = "Espresso";
+            description = "Espresso";
         }
 
-        public override string Description { get; set; }
-
-        public override double Cost()
+        public override double cost()
         {
             return 1.99;
         }

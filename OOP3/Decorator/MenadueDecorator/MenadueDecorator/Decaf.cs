@@ -10,12 +10,11 @@ namespace MenadueDecorator
     {
         public Decaf()
         {
-            Description = "Decaf";
+            description = "Decaf";
+ 
         }
 
-        public override string Description { get; set; }
-
-        public override double Cost()
+        public override double cost()
         {
             return 1.05;
         }

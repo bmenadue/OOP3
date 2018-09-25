@@ -10,12 +10,10 @@ namespace MenadueDecorator
     {
         public HouseBlend()
         {
-            Description = "House Blend";
+            description = "House Blend";
         }
 
-        public override string Description { get; set; }
-
-        public override double Cost()
+        public override double cost()
         {
             return .89;
         }

@@ -10,14 +10,12 @@ namespace MenadueDecorator
     {
         public DarkRoast()
         {
-            Description = "Dark Roast";
+            description = "Dark Roast";
         }
 
-        public override string Description { get;  set; }
-
-        public override double Cost()
+        public override double cost()
         {
             return .99;
-        }
+                }
     }
 }
